@@ -1,0 +1,40 @@
+
+# class, object . object is made from class
+# 'no <>'', '<>''. '<>'' was made from 'no <>''
+#  '<>'' edit the class
+
+<DrawingBoard>:
+    canvas:
+            
+        Color:
+            rgba: 0,1,0,1
+        #Color and rotate are the same, everything below will follow    
+        Rectangle:
+            pos:50,50
+            size: 200,200 # width,height
+            source:"./chip.png" # picture
+        Color:
+            rgba: 1,0,0,1    
+        Ellipse:
+            angle_start:-45
+            angle_end:225
+            size: 50,50 
+            pos: self.width - 100, self.height - 200
+            source:"./chip.png" 
+        Color:
+            rgba: 0,0,1,1          
+        Line:
+            points: 500,500 , 500,700 , 700,700 , 500,500    
+        Line:
+            ellipse: 400,400,130,130, -50,230
+            #        x,y,width,height,angle start,angle end.
+        Line:
+            points: 400,413 , 465,465 , 400,517    
+      
+    canvas.after:
+    #   ^ on top canvas.below is on bottom  
+        Color:
+            rgba: 1,1,0,1
+        Rectangle:
+            pos:70,70
+            size:100,100

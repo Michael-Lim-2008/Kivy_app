@@ -1,0 +1,20 @@
+
+<GeneralOptions@BoxLayout>:
+
+    orientation: "horizontal"
+    padding: 2
+    Button:
+        id:_clearbutton
+        text: "Clear"
+        on_press: 
+            if self.text == "Unclear": self.text = "Clear"
+            else: self.text = "Unclear"
+
+    Button:
+        text: "Remove"
+    ToggleButton:
+        text: "Group"
+    Button:
+        text: "Color"
+    ToggleButton:
+        text: "Gestures"

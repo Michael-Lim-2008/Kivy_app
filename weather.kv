@@ -1,19 +1,78 @@
-AddLocationForm:
 
-<AddLocationForm@BoxLayout>:
-    orientation:"vertical"
-    BoxLayout:
-        TextInput:
-        Button:
-            text: "search"
-        Button:
-            text: "current location"
-    RecycleView:
-<ThreeLabels@BoxLayout>:
-    BoxLayout:
-    Label:
-        text:text1
-    Label:
-        text:text2
-    Label:
-        text:text3                    
+<MyLayout>:
+    
+    
+    AnchorLayout:
+        anchor_x:"left"
+        anchor_y:"top"
+        ToolBox:
+            id: _tool_box
+            size_hint: None,None
+            width: 100
+
+    AnchorLayout:
+        anchor_x:"right"
+        anchor_y:"top"
+        DrawingSpace:
+            size_hint: None,None
+            width: root.width - _tool_box.width   
+            height: root.height - _general_options.height - _status_bar.height  
+
+    AnchorLayout:
+        anchor_x:"center"
+        anchor_y:"bottom"
+        BoxLayout:
+            orientation:"vertical"
+            GeneralOptions:
+                id: _general_options
+                size_hint: 1, None
+                height: 48
+            StatusBar:
+                id: _status_bar
+                size_hint: 1, None
+                height: 24    
+    # rows:2
+    # FloatLayout:
+    #     Button:
+    #         text: "button 1" 
+    #         size_hint: 0.1,0.2
+    #         pos_hint: {"center_x": 0.5, "center_y" : 0.5}
+    # FloatLayout:
+    #     Button:
+    #         text: "button 2" 
+    #         size_hint: 0.1,0.3
+    #         pos: 350,250
+    # RelativeLayout:
+    #     Button:
+    #         text: "button 3"
+    #         size_hint: 0.1,0.3
+    #         pos_hint: {"right":1, "top": 1}
+    # RelativeLayout:
+    #     Button:
+    #         text: "button 4"
+    #         size_hint: 0.6,0.6
+    #         pos: 0,0
+
+    # GridLayout:
+    #     cols: 3
+    #     spacing: 10
+    #     Button:
+    #         text:  "button 5"
+    #     Button:
+    #         text:  "button 6"
+    #     Button:
+    #         text:  "button 7"
+    # BoxLayout:
+    #     orientation: "horizontal" 
+    #     Button:
+    #         text:  "button 8"
+    #     Button:
+    #         text:  "button 9"
+    #         size_hint: 2, 0.3
+    #         pos_hint: {"y": 0.4}
+
+    #     Button:
+    #         text:  "button 10"     
+             
+
+

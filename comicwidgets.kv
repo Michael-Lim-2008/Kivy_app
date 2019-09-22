@@ -1,0 +1,33 @@
+
+<StickMan@RelativeLayout>:
+
+    size_hint: None, None
+    size:48,48
+    canvas:
+        
+
+
+        Line:
+            circle: 24,38,5
+            # x,y,radius(pixels),(x and y is measured by the center)
+        PushMatrix:
+        Color:
+            rgba: 1,0,0,1
+        Rotate:
+            angle:90
+            axis:0,0,1
+            # x,y,z like insert pin thru the stickman
+            origin: 24,24
+            # where you insert the pin
+
+    
+           
+        Line:
+            points:24,33 , 24,15
+        Line:
+            points:14,5 , 24,15        
+        Line:
+            points:34,5 , 24,15    
+        Line:
+            points:14,24 , 34,24  
+        PopMatrix:      
