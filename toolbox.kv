@@ -1,3 +1,4 @@
+#:import toolbox toolbox
 
 <ToolButton@ToggleButton>:
 
@@ -19,7 +20,7 @@
 <ToolBox@GridLayout>:
     cols: 2
     padding: 2
-    ToolButton:
+    PacManButton:
         canvas:
             Ellipse: 
                 size:7,7
@@ -27,14 +28,14 @@
                 angle_start:120
                 angle_end:420
 
-    ToolButton:
+    SmileyFaceButton:
         canvas:
             Point: 
                 points: 12,36, 36,36 
             Line:
                 circle: 24,24,7,135, 225
 
-    ToolButton:
+    StickManButton:
         StickMan:
                  
 

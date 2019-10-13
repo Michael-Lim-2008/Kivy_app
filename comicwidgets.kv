@@ -1,11 +1,13 @@
+#:import comicwidgets comicwidgets
+<DraggableWidget>:
+    size_hint:None, None
 
 <StickMan>:
 
     size_hint: None, None
     size:48,48
     canvas:
-        <DraggableWidget>:
-            size_hint:None, None
+       
         
 
 
@@ -32,4 +34,19 @@
             points:34,5 , 24,15    
         Line:
             points:14,24 , 34,24  
-        PopMatrix:      
+        PopMatrix: 
+
+
+<PacMan>: 
+    canvas:
+        Ellipse: 
+            size:7,7
+            pos:15,15
+            angle_start:120
+            angle_end:420            
+<SmileyFace>:
+    canvas:
+        Point: 
+            points: 12,36, 36,36 
+        Line:
+            circle: 24,24,7,135, 225
